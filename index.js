@@ -18,9 +18,9 @@ return "Currently serving " + katzDeliLine.shift() + ".";
 }
 
 var line = [];
-function currentLine(katzDeli) {
-   for (let i = 0; i < katzDeli.length; i++) {
-     line.push(` `+[i+1]+`. `  + katzDeli[i])
+function currentLine(katzDeliLine) {
+   for (let i = 0; i < katzDeliLine.length; i++) {
+     line.push(` `+[i+1]+`. `  + katzDeliLine[i])
    }
    return(`The line is currently:` + line);
 }
